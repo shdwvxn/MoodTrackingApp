@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/writing"
+        tools:ignore="ContentDescription"
+        android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:text="Type your thoughts here"
+            android:textAlignment="center"
+            android:textSize="18dp"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+    </LinearLayout>
+    <EditText
+        android:id="@+id/noteEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Write everything down here"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="64dp"
+        android:layout_margin="10dp"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="10dp">
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:fontFamily="@font/poppins"
+        android:layout_margin="4dp"
+        tools:ignore="ButtonStyle,MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        android:layout_weight="1"
+        android:background="@color/lightBlue"
+        tools:layout_editor_absoluteY="68dp"/>
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:fontFamily="@font/poppins"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        android:layout_weight="1"
+        android:layout_margin="4dp"
+        android:background="@color/lightBlue"
+        tools:layout_editor_absoluteY="68dp" />
+</LinearLayout>
+
+</LinearLayout>
